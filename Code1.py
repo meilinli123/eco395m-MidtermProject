@@ -1,7 +1,8 @@
 ###############This is to read in the recreational data
 
 import requests as requests
-
+import os
+import json
 import pip
 import requests
 import pandas as pd
@@ -57,7 +58,15 @@ print(all_data)
 
 ################# this is the link to view the recreational data JSON<--
 
-#json converter?
+
+pnw_states = ["WA", "OR", "ID", "MT", "CA"]
+base_url = 'https://ridb.recreation.gov/api/v1/'
+endpoint = 'facilities'
+api_key = '4adb7c65-557b-483e-b06b-035223c1c5a2'
+params = {'state': pnw_states, 'limit': 20, 'offset': 0}
+response = requests.get(base_url+endpoint, params=params, headers={'apikey': api_key})
+response_json = response.json()
+print(json.dumps(response_json, indent=4))
 
 ################# this is to read in the medical data
 
