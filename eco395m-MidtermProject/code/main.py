@@ -57,11 +57,15 @@ def write_data_to_csv(data, path):
     """Write the data to the CSV file.
     """
     with open(path, 'w', newline='') as csvfile:
-        fieldnames = ["state", "facility_id", "activity"]
+        fieldnames = ["LocationAbbr", "Topic", "Data_Value", "Data_Value_Unit", "state", "facility_id", "activity"]
         writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
         writer.writeheader()
         for index, row in data.iterrows():
             writer.writerow({
+                "LocationAbbr": row["LocationAbbr"],
+                "Topic": row["Topic"],
+                "Data_Value": row["Data_Value"],
+                "Data_Value_Unit": row["Data_Value_Unit"],
                 "state": row["state"],
                 "facility_id": row["facility_id"],
                 "activity": row["activity"],
