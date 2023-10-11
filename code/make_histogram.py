@@ -8,7 +8,7 @@ BASE_DIR = "data"
 CSV_PATH = os.path.join(BASE_DIR, "sample_result.csv")
 os.makedirs(BASE_DIR, exist_ok=True)
 IN_PATH = os.path.join(BASE_DIR, "Heart_Disease_Mortality_Data_Among_US_Adults__35___by_State_Territory_and_County.csv")
-OUT_PATH = os.path.join(BASE_DIR, "histogram.png")
+OUT_PATH = os.path.join(BASE_DIR, "histogram1.png")
 
 de = pd.read_csv(CSV_PATH)
 data1 = de['CAMPING']
@@ -35,5 +35,5 @@ plt.title('Heart disease and outdoor activities')
 plt.xlabel('states')
 plt.ylabel('outdoor activities')
 
-plt.show()
 plt.savefig(OUT_PATH, format='png')
+plt.show()

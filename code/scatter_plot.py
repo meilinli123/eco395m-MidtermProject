@@ -38,5 +38,11 @@ plt.title('Scatter Plot of Mortality vs Participation Rates (by State)')
 plt.legend()
 plt.grid(True)
 
+# Define the output path
+OUT_PATH = os.path.join(BASE_DIR, "scatter_plot.png")
+
+# Save the plot
+plt.savefig(OUT_PATH, format='png')
+
 # Show the plot
 plt.show()
