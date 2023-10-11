@@ -19,7 +19,7 @@ if __name__ == "__main__":
     api_key = '4adb7c65-557b-483e-b06b-035223c1c5a2'
     api_data = []
     for state in pnw_states:
-        params = {'state': state, 'limit': 1000, 'offset': 0} #set limit to 2
+        params = {'state': state, 'limit': 2, 'offset': 0} #set limit to 2
         response = requests.get(base_url+endpoint, params=params, headers={'apikey': api_key})
         response_json = response.json()
         # print(json.dumps(response_json, indent=4))
