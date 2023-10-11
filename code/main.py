@@ -3,6 +3,7 @@ import pandas as pd
 import requests
 import json
 import csv
+from decouple import config
 
 BASE_DIR = "data"
 CSV_PATH = os.path.join(BASE_DIR, "facilities.csv")
@@ -20,7 +21,12 @@ if __name__ == "__main__":
 
     base_url = 'https://ridb.recreation.gov/api/v1/'
     endpoint = 'facilities'
-    api_key = '4adb7c65-557b-483e-b06b-035223c1c5a2'
+
+    # Read the API key from the .env file
+    api_key = config('api_key')
+    # Use the API key in your code
+    print(f"api_key: {api_key}")
+
     api_data = []
     for state in pnw_states:
         params = {'state': state, 'limit': 10, 'offset': 0} #set limit to 2
