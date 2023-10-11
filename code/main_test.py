@@ -1,8 +1,8 @@
 import os
 import pandas as pd
 import csv
-from sorting_copy import activity_data
-from data_reform import calculate_counts_and_avgs
+from sorting_test import activity_data
+from data_reform_test import calculate_counts_and_avgs
 
 BASE_DIR = "data"
 CSV_PATH = os.path.join(BASE_DIR, "sample_result.csv")
