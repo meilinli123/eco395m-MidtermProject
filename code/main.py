@@ -1,14 +1,17 @@
-
 import os
 import pandas as pd
 import requests
 import json
+import csv
 
-IN_PATH = os.path.join("data", "Heart_Disease_Mortality_Data_Among_US_Adults__35___by_State_Territory_and_County.csv")
+BASE_DIR = "data"
+CSV_PATH = os.path.join(BASE_DIR, "facilities.csv")
+os.makedirs(BASE_DIR, exist_ok=True)
+IN_PATH = os.path.join(BASE_DIR, "Heart_Disease_Mortality_Data_Among_US_Adults__35___by_State_Territory_and_County.csv")
 
 if __name__ == "__main__":
-    df = pd.read_csv(IN_PATH)
-    #df = pd.read_csv('../data/Heart_Disease_Mortality_Data_Among_US_Adults__35___by_State_Territory_and_County.csv')
+    # df = pd.read_csv(IN_PATH)
+    df = pd.read_csv('data/Heart_Disease_Mortality_Data_Among_US_Adults__35___by_State_Territory_and_County.csv')
     pnw_states = ["WA", "OR", "ID", "MT", "WY"]
     filtered_df = df[(df['LocationAbbr'].isin(pnw_states) & (df['GeographicLevel'] == 'State'))]
 
@@ -20,7 +23,7 @@ if __name__ == "__main__":
     api_key = '4adb7c65-557b-483e-b06b-035223c1c5a2'
     api_data = []
     for state in pnw_states:
-        params = {'state': state, 'limit': 1000, 'offset': 0} #set limit to 2
+        params = {'state': state, 'limit': 10, 'offset': 0} #set limit to 2
         response = requests.get(base_url+endpoint, params=params, headers={'apikey': api_key})
         response_json = response.json()
         # print(json.dumps(response_json, indent=4))
@@ -42,3 +45,20 @@ if __name__ == "__main__":
     df_api = pd.DataFrame(activity_data)
     merged_df = pd.merge(filtered_df, df_api, left_on='LocationAbbr', right_on='state')
     print(merged_df)
+
+    data = merged_df
+    path = CSV_PATH
+def write_data_to_csv(data, path):
+    """Write the data to the CSV file.
+    """
+    with open(path, 'w', newline='') as csvfile:
+        fieldnames = ["state", "facility_id", "activity"]
+        writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+        writer.writeheader()
+        for index, row in data.iterrows():
+            writer.writerow({
+                "state": row["state"],
+                "facility_id": row["facility_id"],
+                "activity": row["activity"],
+            })
+write_data_to_csv(merged_df, CSV_PATH)
