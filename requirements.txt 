@@ -1,0 +1,3 @@
+pip install pypi-json
+pip install matplotlib
+pip install pandas
