@@ -1,31 +1,13 @@
 import os
 import pandas as pd
 import csv
-from activity_sorting import activity_data
+from sorting_test import activity_data
+from data_reform_test import calculate_counts_and_avgs
 
 BASE_DIR = "data"
-CSV_PATH = os.path.join(BASE_DIR, "facilities.csv")
+CSV_PATH = os.path.join(BASE_DIR, "sample_result.csv")
 os.makedirs(BASE_DIR, exist_ok=True)
 IN_PATH = os.path.join(BASE_DIR, "Heart_Disease_Mortality_Data_Among_US_Adults__35___by_State_Territory_and_County.csv")
-
-def write_data_to_csv(data, path):
-
-    """Write the data to the CSV file."""
-
-    with open(path, 'w', newline='') as csvfile:
-        fieldnames = ["LocationAbbr", "Topic", "Data_Value", "Data_Value_Unit", "state", "facility_id", "activity"]
-        writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
-        writer.writeheader()
-        for index, row in data.iterrows():
-            writer.writerow({
-                "LocationAbbr": row["LocationAbbr"],
-                "Topic": row["Topic"],
-                "Data_Value": row["Data_Value"],
-                "Data_Value_Unit": row["Data_Value_Unit"],
-                "state": row["state"],
-                "facility_id": row["facility_id"],
-                "activity": row["activity"],
-            })
 
 if __name__ == "__main__":
     
@@ -34,11 +16,15 @@ if __name__ == "__main__":
     filtered_df = df[(df['LocationAbbr'].isin(pnw_states) & (df['GeographicLevel'] == 'State'))]
     filtered_df.dropna(subset=['Data_Value'], inplace=True)
 
-    data = activity_data
-    path = CSV_PATH
-    df_api = pd.DataFrame(data)
-    
-    merged_df = pd.merge(filtered_df, df_api, left_on='LocationAbbr', right_on='state')
-    print(merged_df)
+    state_population = {"ID": 1.939033, 
+                    "MT": 1.122867,
+                    "OR": 4.240137,
+                    "WA": 7.785786,
+                    "WY": 0.581381}
 
-    write_data_to_csv(merged_df, CSV_PATH)
+    result_df = calculate_counts_and_avgs(activity_data, filtered_df, state_population)
+    print(result_df)
+    df_api = pd.DataFrame(result_df)
+    
+    df_api.to_csv(CSV_PATH, index=False)
+    
