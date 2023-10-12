@@ -18,11 +18,11 @@ However, the direct relationship between heart disease mortality and the prevale
 Our sources of data consist of 2 sets. Firstly, we include outdoor activity facilities across the United States, as taken from the Recreational.Gov site. (Please see references for the link to the 2 data sets via URL / Web.) The Recreation Information Database (RIDB) serves as a valuable resource for the public, offering a central hub for accessing information on recreational activities and destinations across the United States. It stands as an official and comprehensive platform catering to the needs of countless visitors to federal lands, historical sites, museums, and various other points of interest. It is a public API scraping site. However, we limit our analysis to states that are basically in the same climate and region. We argue that it contains similar types of outdoor activities, and thus can be comparable. (Please see methodology for how to retrieve the data from this site for reproducibility.)
 
 The list of states we have selected are that among the Pacific Northwest (PNW):
-Washington
-Oregon
-Idaho
-Montana
-Wyoming 
+Washington,
+Oregon,
+Idaho,
+Montana,
+and Wyoming.
 The details of facilities are captured from the recreation.gov, we scraped through API and selected aforementioned 5 states, at first using longitude and latitude by Geopy package, but then we were able to match on state level.
 
 Secondly, the CDC website is designed to provide users with quick and easy access to the wide range of medical information and data available. The site is home to the latest news, information, and publications from the Center, as well as an extensive data archive accessible to the public. Heart disease mortality data among US adults by states are taken from the CDC website—Centers for Disease Control and Prevention, and then focused/divided by states (by use of CSV directly).
