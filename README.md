@@ -76,6 +76,8 @@ Several factors may underlie this counterintuitive result. One plausible explana
 
 ### <histogram_pretty.png>
 
+![scatter plot](data/histogram2.png)
+
 To study the effect by different activities, the histogram is faceted according to two key rates: heart disease mortality rate and activity participation rate. For the participation rate part, each activity is categorized by a unique color, while in the mortality rate part the columns are in another distinctively different color. First, the result of histogram echoes with the result of scatter plot, which indicates some weakly positive relationship between the outdoor activity participation rate and heart disease mortality rate. As for different activities, we can discover that fishing seems to have the weakest relationship with heart disease mortality since for the columns of WY, fishing reaches a distinctively high rate, but WY doesn’t have the highest mortality rate, given the rate of other two activities are also relatively high. 
 
 Generally speaking, among the three activities, camping and hiking are more obviously to have a positive relationship with the mortality rate than fishing. This also matches our common sense that among outdoor activities, fishing is quieter and doesn’t require as strong cardio-pulmonary function as camping and hiking. 
