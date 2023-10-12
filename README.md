@@ -123,6 +123,6 @@ Reference Material:
 
 https://www.dataquest.io/blog/python-api-tutorial/
 
-Krueger, Edward. Shree Menon. “API Calls & Data Scraping.”, “Pandas.”, ECO395, University of Texas, Austin, Austin, October, 2023.
+Krueger, Edward. Menon, Shree. “API Calls & Data Scraping.”, “Pandas.”, ECO395, University of Texas, Austin, Austin, October, 2023.
 
 https://pandas.pydata.org/docs/user_guide/10min.html
