@@ -27,6 +27,8 @@ The details of facilities are captured from the recreation.gov, we scraped throu
 
 Secondly, the CDC website is designed to provide users with quick and easy access to the wide range of medical information and data available. The site is home to the latest news, information, and publications from the Center, as well as an extensive data archive accessible to the public. Heart disease mortality data among US adults by states are taken from the CDC website—Centers for Disease Control and Prevention, and then focused/divided by states (by use of CSV directly).
 
+We focus on Heart mortality, number of facilities, facility ID, state, and the number of entries in terms of columns of data.
+
 We retrieved this data in the month of October of the year 2023. The information on the CDC and Recreational site is not subject to copyright, and is in the public domain.
 
 
