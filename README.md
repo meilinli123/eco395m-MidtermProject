@@ -65,6 +65,8 @@ The other limitation is the speed in which the code can run - the API scraping t
 
 ### <scatter_plot.png>
 
+![scatter plot](data/scatter_plot.png)
+
 By examining the scatter, we can discern the relationship between participation rates in outdoor activities and the mortality rate due to heart attacks. In this analysis, we've focused on three specific activities – camping, fishing, and hiking – within the same state, using consistent colors to enhance the visual clarity of this relationship.
 
 Our observations reveal a somewhat unexpected trend: higher participation rates in these outdoor activities appear to weakly coincide with elevated heart attack mortality rates. This finding seems to challenge the conventional notion that engagement in outdoor activities generally promotes better health.
