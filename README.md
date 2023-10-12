@@ -8,13 +8,11 @@
 
 ## Introduction & Background
 
-### Introduction:
-In recent years, health and wellness have become focal points for many communities, with heart disease mortality rates often used as a benchmark for overall community health. Parallelly, the presence and popularity of outdoor recreational facilities, which are known to contribute to healthier lifestyles, have seen significant attention from policymakers and health advocates alike. Our project seeks to explore a potentially overlooked connection: "Is there any relationship between the heart disease mortality rates and the popularity of outdoor activity facilities within a state?"
+In recent years, health and wellness have become focal points for many communities, with heart disease mortality rates often used as a benchmark for overall community health.  Its onset can be influenced by a myriad of factors, including diet, genetics, and notably, physical activity.  Outdoor recreational facilities, such as parks, trails, and sports complexes, play a crucial role in promoting physical activity among residents of an area.  The accessibility, quality, and popularity of these facilities can potentially impact the overall health outcomes of a community.
 
-### Background:
-Heart disease remains a paramount health concern in the United States and worldwide. Its onset can be influenced by a myriad of factors, including diet, genetics, and notably, physical activity. Outdoor recreational facilities, such as parks, trails, and sports complexes, play a crucial role in promoting physical activity among residents of an area. The accessibility, quality, and popularity of these facilities can potentially impact the overall health outcomes of a community.
-However, the direct relationship between heart disease mortality and the prevalence and popularity of such facilities has not been extensively studied. Do states with more popular outdoor facilities exhibit lower heart disease mortality rates due to increased physical activity among their residents? Or do other factors overshadow this potential correlation?
-By exploring this relationship, we aim to provide valuable insights that could influence future urban planning, healthcare policies, and community wellness programs.
+
+However, the direct relationship between heart disease mortality and the prevalence and popularity of such facilities has not been extensively studied.     Our project seeks to explore a potentially overlooked connection: "Is there any relationship between the heart disease mortality rates and the participation of outdoor activity facilities within a state?”   Do states with more popular outdoor facilities exhibit lower heart disease mortality rates due to increased physical activity among their residents?  Or do other factors overshadow this potential correlation?  By exploring this relationship, we aim to provide valuable insights that could influence future urban planning, healthcare policies, and community wellness programs.
+
 
 ## Source of data
 Our sources of data firstly include outdoor activity facilities across the United States, as taken from the Recreational.Gov site (https://www.recreation.gov/). The Recreation Information Database (RIDB) serves as a valuable resource for the public, offering a central hub for accessing information on recreational activities and destinations across the United States. It stands as an official and comprehensive platform catering to the needs of countless visitors to federal lands, historical sites, museums, and various other points of interest. It is a public API scraping site. However, we limit our analysis to states that are basically in the same climate and region. We argue that it contains similar types of outdoor activities, and thus can be comparable.
@@ -68,24 +66,31 @@ By examining the scatter, we can discern the relationship between participation 
 
 Our observations reveal a somewhat unexpected trend: higher participation rates in these outdoor activities appear to weakly coincide with elevated heart attack mortality rates. This finding seems to challenge the conventional notion that engagement in outdoor activities generally promotes better health.
 
-Several factors may underlie this counterintuitive result. One plausible explanation is that outdoor activities inherently entail a higher degree of risk, which could contribute to the elevated mortality rates.
-
-Consequently, it is advisable to exercise caution when recommending outdoor activities to individuals who may have underlying heart conditions. While these activities can offer numerous health benefits, it's crucial to consider an individual's health status and potential risks before encouraging excessive participation.
+Several factors may underlie this counterintuitive result. One plausible explanation is that outdoor activities inherently entail a higher degree of risk, which could contribute to the elevated mortality rates. Consequently, it is advisable to exercise caution when recommending outdoor activities to individuals who may have underlying heart conditions. While these activities can offer numerous health benefits, it's crucial to consider an individual's health status and potential risks before encouraging excessive participation.
 
 
 ### <histogram_pretty.png>
 
-To study the effect by different activities, the histogram is faceted according to two key rates: heart disease mortality rate and activity participation rate. For the participation rate part, each activity is categorized by a unique color, while in the mortality rate part the columns are in another distinctively different color. First, the result of histogram echoes with the result of scatter plot, which indicates some weakly positive relationship between the outdoor activity participation rate and heart disease mortality rate. As for different activities, we can discover that fishing seems to have the weakest relationship with heart disease mortality since for the columns of WY, fishing reaches a distinctively high rate, but WY doesn’t have the highest mortality rate, given the rate of other two activities are also relatively high. Generally speaking, among the three activities, camping and hiking are more obviously to have a positive relationship with the mortality rate than fishing. This also matches our common sense that among outdoor activities, fishing is quieter and doesn’t require as strong cardio-pulmonary function as camping and hiking. 
+To study the effect by different activities, the histogram is faceted according to two key rates: heart disease mortality rate and activity participation rate. For the participation rate part, each activity is categorized by a unique color, while in the mortality rate part the columns are in another distinctively different color. First, the result of histogram echoes with the result of scatter plot, which indicates some weakly positive relationship between the outdoor activity participation rate and heart disease mortality rate. As for different activities, we can discover that fishing seems to have the weakest relationship with heart disease mortality since for the columns of WY, fishing reaches a distinctively high rate, but WY doesn’t have the highest mortality rate, given the rate of other two activities are also relatively high. 
 
- 
+Generally speaking, among the three activities, camping and hiking are more obviously to have a positive relationship with the mortality rate than fishing. This also matches our common sense that among outdoor activities, fishing is quieter and doesn’t require as strong cardio-pulmonary function as camping and hiking. 
+
 
 ## Analysis Extension
 
-Activity Specific Analysis: Breakdown by type of outdoor facility. Do certain facilities like swimming pools or hiking trails have a more pronounced correlation with heart disease rates compared to others?
+### Activity specific analysis: 
 
-Time-Series Analysis: Track changes over time. If more outdoor facilities are introduced in a certain area, does heart disease mortality decrease over the subsequent years?
+To gain a deeper understanding of the relationship between outdoor activity and mortality from heart disease, a more detailed approach could be employed. It would be insightful to break down the data by specific types of outdoor facilities, such as swimming pools, hiking trails, stadiums, or recreation centers. This could reveal whether certain facilities have a more pronounced correlation with heart disease rates, compared to others. For example, if swimming pools are significantly associated with lower death rates from heart disease, compared to hiking trails, this information could guide the development of specific types of outdoor facilities in areas with high rates of heart disease.
 
-Quantifying Popularity: Rather than just looking at the number of facilities, leverage data on actual usage rates. A state may have numerous facilities, but if they're underutilized, the potential health benefits may not be realized.
+### Time series analysis: 
+
+In order to assess the long-term effects of outdoor activities on heart disease rates, a time series analysis should be performed. The analysis will track changes over time, looking at whether introducing more outdoor facilities in a given area leads to a decline in heart disease deaths in subsequent years. The benefits of increased outdoor activity participation can take time to become apparent, and understanding time-based trends can provide valuable insights for policy makers and urban planners.
+
+### Quantify popularity and utilization: 
+
+In addition to considering the number of outdoor facilities, it is important to know the actual utilization data. A state may have numerous facilities, but if they are underutilized, the potential health benefits may not be fully realized. Surveying the utilization of these facilities can help determine whether encouraging greater participation is effective. In addition, this analysis can help identify patterns of underutilization and develop strategies to maximize the health impact of existing facilities.
+
+These extensions can deepen our understanding of the relationship between outdoor activity and heart disease mortality, providing more refined insights that can guide targeted interventions to improve the health and well-being of communities.
 
 
 
