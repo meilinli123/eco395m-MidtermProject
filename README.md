@@ -74,7 +74,7 @@ Our observations reveal a somewhat unexpected trend: higher participation rates 
 Several factors may underlie this counterintuitive result. One plausible explanation is that outdoor activities inherently entail a higher degree of risk, which could contribute to the elevated mortality rates. Consequently, it is advisable to exercise caution when recommending outdoor activities to individuals who may have underlying heart conditions. While these activities can offer numerous health benefits, it's crucial to consider an individual's health status and potential risks before encouraging excessive participation.
 
 
-### <histogram_pretty.png>
+### <histogram2.png>
 
 ![scatter plot](data/histogram2.png)
 
