@@ -55,7 +55,7 @@ The precise selection of domains. We simply choose The Pacific Northwest by long
 
 More states contained. We selected only 5 states to display if there are any relationships between the two items, but it would be more clear and conclusive for this analysis to contain more states, 10 states, 20 states, etc.
 
-More factors about outdoor activities. We choose the facilities of outdoor activities as one item to measure the outdoor activity, but there are huge factors out of our consideration like outdoor sports without facilities, and so on. Adding more outdoor factors could raise the robust of this analysis.
+More factors about outdoor activities. We choose the facilities of outdoor activities as one item to measure the outdoor activity, but there are huge factors out of our consideration like outdoor sports without facilities, and so on. Adding more outdoor factors could raise the robustness of this analysis.
 
 Another limitation is that California’s (CA) data made the code super slow to run effectively, (because its associated data is incredibly large,) so we changed CA to Wyoming (WY). We thus had to redefine the region, as the PNW is now defined as WA, OR, ID, MO, and WY (instead of CA). However, part of the write is up to us to define what the PNW is, as some people define it including canada, northern california, with wyoming, or just WA / OR/ ID.
 
