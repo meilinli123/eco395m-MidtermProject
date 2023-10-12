@@ -99,16 +99,9 @@ These extensions can deepen our understanding of the relationship between outdoo
 
 ## Conclusion
 
-In conclusion, our investigation into the relationship between heart disease mortality rates and the popularity of outdoor activity facilities within specific states has yielded valuable insights and raised thought-provoking questions.
+In conclusion, our investigation into the relationship between heart disease mortality rates and the popularity of outdoor activity facilities within specific states has yielded valuable insights and raised thought-provoking questions.   Our findings, as depicted in the scatter plot and histograms, higher participation rates in these outdoor activities appear to weakly coincide with elevated heart attack mortality rates.     We observed that higher participation rates in outdoor activities, specifically camping, fishing, and hiking, were weakly associated with elevated heart attack mortality rates. This result challenges the conventional belief that outdoor activities inherently promote better health. We hypothesize that the increased risk associated with certain outdoor activities might contribute to the higher mortality rates observed.
 
-Our findings, as depicted in the scatter plot and histograms, present a somewhat unexpected trend. We observed that higher participation rates in outdoor activities, specifically camping, fishing, and hiking, were weakly associated with elevated heart attack mortality rates. This result challenges the conventional belief that outdoor activities inherently promote better health. We hypothesize that the increased risk associated with certain outdoor activities might contribute to the higher mortality rates observed.
-
-This research sheds light on the complexity of factors influencing public health and underscores the need for a nuanced approach when promoting outdoor activities. It's crucial to consider individual health conditions and risk factors, especially in those with underlying heart conditions. Our study suggests that a one-size-fits-all recommendation for outdoor activities may not be appropriate.
-
-As we move forward, potential avenues for further investigation include a more detailed analysis of specific types of outdoor facilities and their impact, as well as a time-series analysis to track changes in health outcomes over time. Additionally, quantifying the actual usage rates of these facilities could provide a more comprehensive understanding of their influence on public health.
-
-In conclusion, while outdoor activities offer numerous benefits, a cautious and individualized approach is essential to ensure they contribute positively to community well-being and public health.
-
+This research sheds light on the complexity of factors influencing public health and underscores the need for a nuanced approach when promoting outdoor activities.   It's crucial to consider individual health conditions and risk factors, especially in those with underlying heart conditions.   Our study suggests that  while outdoor activities offer numerous benefits, a cautious and individualized approach is essential to ensure they contribute positively to community well-being and public health.
 
 ## References & Acknowledgements
 
