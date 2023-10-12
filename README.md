@@ -63,7 +63,7 @@ The other limitation is the speed in which the code can run - the API scraping t
 
 ## Analysis & Results
 
-### <scatter_plot.png>
+
 
 ![scatter plot](data/scatter_plot.png)
 
@@ -74,7 +74,6 @@ Our observations reveal a somewhat unexpected trend: higher participation rates 
 Several factors may underlie this counterintuitive result. One plausible explanation is that outdoor activities inherently entail a higher degree of risk, which could contribute to the elevated mortality rates. Consequently, it is advisable to exercise caution when recommending outdoor activities to individuals who may have underlying heart conditions. While these activities can offer numerous health benefits, it's crucial to consider an individual's health status and potential risks before encouraging excessive participation.
 
 
-### <histogram2.png>
 
 ![scatter plot](data/histogram2.png)
 
